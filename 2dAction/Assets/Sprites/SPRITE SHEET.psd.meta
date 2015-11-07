@@ -1,0 +1,368 @@
+fileFormatVersion: 2
+guid: 39b3be54fddd5ca45846f927695faf31
+timeCreated: 1446902653
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Running_1
+    21300002: Running_6
+    21300004: Running_7
+    21300006: Running_8
+    21300008: Running_9
+    21300010: Running_10
+    21300012: Running_11
+    21300014: Running_12
+    21300016: Running_13
+    21300018: Running_14
+    21300020: Running_15
+    21300022: Running_16
+    21300024: Running_17
+    21300026: Running_18
+    21300028: Running_19
+    21300030: Running_20
+    21300032: Running_22
+    21300034: Running_23
+    21300036: Running_24
+    21300038: Running_25
+    21300040: Running_26
+    21300042: Running_21
+    21300044: Running_2
+    21300046: Running_3
+    21300048: Running_4
+    21300050: Running_5
+    21300052: SPRITE SHEET_0
+    21300054: SPRITE SHEET_1
+    21300056: SPRITE SHEET_2
+    21300058: SPRITE SHEET_3
+    21300060: SPRITE SHEET_4
+    21300062: SPRITE SHEET_5
+    21300064: SPRITE SHEET_6
+    21300066: SPRITE SHEET_7
+    21300068: SPRITE SHEET_8
+    21300070: SPRITE SHEET_9
+    21300072: SPRITE SHEET_10
+    21300074: SPRITE SHEET_11
+    21300076: SPRITE SHEET_12
+    21300078: SPRITE SHEET_13
+    21300080: SPRITE SHEET_14
+    21300082: SPRITE SHEET_15
+    21300084: SPRITE SHEET_16
+    21300086: SPRITE SHEET_17
+    21300088: SPRITE SHEET_18
+    21300090: SPRITE SHEET_19
+    21300092: SPRITE SHEET_20
+    21300094: SPRITE SHEET_21
+    21300096: SPRITE SHEET_22
+    21300098: SPRITE SHEET_23
+    21300100: SPRITE SHEET_24
+    21300102: SPRITE SHEET_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SPRITE SHEET_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2405
+        width: 355
+        height: 430
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_1
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 2391
+        width: 365
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_2
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 2396
+        width: 336
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_3
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 2393
+        width: 344
+        height: 442
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_4
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 2402
+        width: 323
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_5
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 2391
+        width: 324
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_6
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2423
+        width: 298
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1929
+        width: 340
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_8
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1932
+        width: 363
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_9
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1932
+        width: 364
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_10
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 1942
+        width: 370
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_11
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1939
+        width: 410
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_12
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 1943
+        width: 398
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1436
+        width: 427
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_14
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1429
+        width: 410
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_15
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1427
+        width: 393
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_16
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 1415
+        width: 410
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_17
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 1415
+        width: 392
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 805
+        width: 407
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_19
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 793
+        width: 403
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_20
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 786
+        width: 393
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_21
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 786
+        width: 387
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_22
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 793
+        width: 370
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_23
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 175
+        width: 387
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_24
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 170
+        width: 427
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITE SHEET_25
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 167
+        width: 395
+        height: 458
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
