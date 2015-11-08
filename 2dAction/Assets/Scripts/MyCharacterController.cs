@@ -10,12 +10,31 @@ public class MyCharacterController : MonoBehaviour {
 	private float move;
 	public bool facingRight;
 	public Transform playerGraphics;
+	public Transform arm;
+	public float armOffset;
+	public Animator animator;
+	public float isMoving;
+	public Transform cursor;
+	public Quaternion armRotation;
+	public armRotation ArmRotation;
+
 	void Start () {
 		move = Input.GetAxis ("Horizontal");
 		playerGraphics = transform.FindChild("Rob");
+		arm = transform.FindChild ("RobArm");
 		facingRight = true;
 	}
 	void Update () {
+		armRotation = arm.rotation;
+		cursor.position = new Vector2(Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
+
+		if (move != 0) {
+			isMoving = 1;
+		} else {
+			isMoving = 0;
+		}
+
+		Animate ();
 		Move ();
 	}
 	void Move () {
@@ -38,9 +57,15 @@ public class MyCharacterController : MonoBehaviour {
 
 		GetComponent<Rigidbody2D>().velocity = new Vector2 (move * Speed, GetComponent<Rigidbody2D>().velocity.y);
 
-		if (move > 0 && !facingRight) {
+		if (cursor.position.x > transform.position.x && !facingRight) {
+			if(Rb.position.x != 0)
+			arm.position = new Vector2 (arm.position.x + armOffset, arm.position.y);
+
 			Flip ();
-		} else if (move < 0 && facingRight) {
+		} else if (cursor.position.x < playerGraphics.position.x && facingRight) {
+			if(Rb.position.x != 0) 
+			arm.position = new Vector2 (arm.position.x - armOffset, arm.position.y);
+
 			Flip ();
 		}
 
@@ -48,13 +73,33 @@ public class MyCharacterController : MonoBehaviour {
 
 	void Flip () {
 		facingRight = !facingRight;
-		
+
 		// Multiply the player's x local scale by -1.
 		Vector3 theScale = playerGraphics.localScale;
+		Vector3 armScale = arm.localScale;
+		armRotation = arm.rotation;
 		theScale.x *= -1;
+		armScale.x *= -1;
+		armRotation.z *= -1;
 		playerGraphics.localScale = theScale;
+		arm.localScale = armScale;
+		arm.rotation = armRotation;
 	}
 
-}
+	void FixedUpdate () {
+		arm.rotation = armRotation;
 
-//GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
+	}
+
+	void Animate() {
+
+		animator.SetFloat ("playerSpeed", isMoving);
+		animator.SetBool ("Grounded", grounded);
+	
+	}
+
+
+	}
+
+
+
