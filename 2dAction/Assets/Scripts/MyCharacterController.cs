@@ -17,6 +17,7 @@ public class MyCharacterController : MonoBehaviour {
 	public Transform cursor;
 	public Quaternion armRotation;
 	public armRotation ArmRotation;
+	public int armRotationOffset;
 
 	void Start () {
 		move = Input.GetAxis ("Horizontal");
@@ -62,11 +63,13 @@ public class MyCharacterController : MonoBehaviour {
 			arm.position = new Vector2 (arm.position.x + armOffset, arm.position.y);
 
 			Flip ();
+			armRotationOffset = 0;
 		} else if (cursor.position.x < playerGraphics.position.x && facingRight) {
 			if(Rb.position.x != 0) 
 			arm.position = new Vector2 (arm.position.x - armOffset, arm.position.y);
 
 			Flip ();
+			armRotationOffset = 180;
 		}
 
 	}
@@ -80,10 +83,8 @@ public class MyCharacterController : MonoBehaviour {
 		armRotation = arm.rotation;
 		theScale.x *= -1;
 		armScale.x *= -1;
-		armRotation.z *= -1;
 		playerGraphics.localScale = theScale;
 		arm.localScale = armScale;
-		arm.rotation = armRotation;
 	}
 
 	void FixedUpdate () {
