@@ -18,6 +18,7 @@ public class MyCharacterController : MonoBehaviour {
 	public Quaternion armRotation;
 	public armRotation ArmRotation;
 	public int armRotationOffset;
+	public float killFloor;
 
 	void Start () {
 		move = Input.GetAxis ("Horizontal");
@@ -37,6 +38,10 @@ public class MyCharacterController : MonoBehaviour {
 
 		Animate ();
 		Move ();
+
+		if (transform.position.y < killFloor ) {
+			Application.LoadLevel(Application.loadedLevel);
+		}
 	}
 	void Move () {
 		move = Input.GetAxis ("Horizontal");
@@ -59,14 +64,14 @@ public class MyCharacterController : MonoBehaviour {
 		GetComponent<Rigidbody2D>().velocity = new Vector2 (move * Speed, GetComponent<Rigidbody2D>().velocity.y);
 
 		if (cursor.position.x > transform.position.x && !facingRight) {
-			if(Rb.position.x != 0)
-			arm.position = new Vector2 (arm.position.x + armOffset, arm.position.y);
+			//if(Rb.position.x != 0)
+			//arm.position = new Vector2 (arm.position.x + armOffset, arm.position.y);
 
 			Flip ();
 			armRotationOffset = 0;
 		} else if (cursor.position.x < playerGraphics.position.x && facingRight) {
-			if(Rb.position.x != 0) 
-			arm.position = new Vector2 (arm.position.x - armOffset, arm.position.y);
+			//if(Rb.position.x != 0) 
+			//arm.position = new Vector2 (arm.position.x - armOffset, arm.position.y);
 
 			Flip ();
 			armRotationOffset = 180;
@@ -78,13 +83,13 @@ public class MyCharacterController : MonoBehaviour {
 		facingRight = !facingRight;
 
 		// Multiply the player's x local scale by -1.
-		Vector3 theScale = playerGraphics.localScale;
-		Vector3 armScale = arm.localScale;
-		armRotation = arm.rotation;
+		Vector3 theScale = transform.localScale;
+		//Vector3 armScale = arm.localScale;
+		//armRotation = arm.rotation;
 		theScale.x *= -1;
-		armScale.x *= -1;
-		playerGraphics.localScale = theScale;
-		arm.localScale = armScale;
+		//armScale.x *= -1;
+		transform.localScale = theScale;
+		//arm.localScale = armScale;
 	}
 
 	void FixedUpdate () {
@@ -98,6 +103,11 @@ public class MyCharacterController : MonoBehaviour {
 		animator.SetBool ("Grounded", grounded);
 	
 	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		print ("Detected");
+		Application.LoadLevel (Application.loadedLevel);
+	} 
 
 
 	}
